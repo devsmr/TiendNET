@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "737183433539",
+    "firebase_url": "https://tiendnet.firebaseio.com",
+    "project_id": "tiendnet",
+    "storage_bucket": "tiendnet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737183433539:android:7499eee5a5ac3540",
+        "android_client_info": {
+          "package_name": "com.example.tiendnet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737183433539-mhru7540o6m451ltg51bao48dc8obqsv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tiendnet",
+            "certificate_hash": "adf8f02f7905fab48ed02203f4c5d5e378633e38"
+          }
+        },
+        {
+          "client_id": "737183433539-pftabfqdi9gai8rb7l2mb115sc2klf8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5V9G4BhUcUsCUT-dm5S2q0xFll-BO870"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737183433539-pftabfqdi9gai8rb7l2mb115sc2klf8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

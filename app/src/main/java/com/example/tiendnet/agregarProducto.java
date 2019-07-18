@@ -21,13 +21,13 @@ public class agregarProducto extends AppCompatActivity {
 
 
 
-    public void cancelar(){
+   /* public void cancelar(){
         id.setText("");
         nombre.setText("");
         cantidad.setText("");
         precio.setText("");
         id.requestFocus();
-    }
+    }*/
 
     public void onBackPressed(){
         finish();
