@@ -1,22 +1,73 @@
 package com.example.tiendnet;
 
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class agregarProducto extends AppCompatActivity {
+
+    private ArrayList<Integer> fotos;
     private EditText id,nombre,cantidad,precio;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_producto);
 
+        fotos= new ArrayList<>();
+        fotos.add(R.drawable.image);
+        fotos.add(R.drawable.image2);
+        fotos.add(R.drawable.image3);
         id = findViewById(R.id.txtId);
         nombre=findViewById(R.id.txtNombre);
         cantidad = findViewById(R.id.editCantidad);
         precio = findViewById(R.id.editPrecio);
+    }
+
+public void guardar(View v){
+
+    String idAgreg, nom, canti, prec;
+    int foto;
+    idAgreg = Datos.getId();
+    nom = nombre.getText().toString();
+    canti= cantidad.getText().toString();
+    prec = precio.getText().toString();
+    foto = this.fotoAleatoria();
+    Producto p = new Producto(idAgreg,nom,canti,prec);
+    p.guardar();
+    //p.eliminar();
+
+    //Snackbar.make(v,"Persona Guardada Exitosamente",Snackbar.LENGTH_SHORT).show();
+    Snackbar.make(v,getString(R.string.mensaje),Snackbar.LENGTH_SHORT).show();
+}
+
+
+
+    public void limpiar(View v){
+        limpiar();
+    }
+
+    public void limpiar(){
+
+        id.setText("");
+        nombre.setText("");
+        cantidad.setText("");
+        precio.setText("");
+        nombre.requestFocus();
+    }
+
+    //para las fotos
+    public int fotoAleatoria(){
+        int fotoSeleccionada;
+        Random r = new Random();
+        fotoSeleccionada = r.nextInt(this.fotos.size());
+        return fotos.get(fotoSeleccionada);
     }
 
 

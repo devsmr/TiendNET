@@ -44,4 +44,16 @@ public class Producto {
     public void setPrecio(String precio) {
         this.precio = precio;
     }
+
+    public void guardar(){
+        Datos.agregar(this);
+    }
+
+    public void eliminar(){
+        Datos.eliminar(this);
+    }
+
+    public void editar(){
+        Datos.editar(this);
+    }
 }
