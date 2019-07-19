@@ -20,15 +20,6 @@ public class agregarProducto extends AppCompatActivity {
     }
 
 
-
-   /* public void cancelar(){
-        id.setText("");
-        nombre.setText("");
-        cantidad.setText("");
-        precio.setText("");
-        id.requestFocus();
-    }*/
-
     public void onBackPressed(){
         finish();
         Intent i = new Intent(agregarProducto.this,MainActivity.class);
