@@ -2,12 +2,14 @@ package com.example.tiendnet;
 
 public class Producto {
     private String id;
+    private int foto;
     private String nombre;
     private String cantidad;
     private String precio;
 
-    public Producto(String id, String nombre, String cantidad, String precio) {
+    public Producto(String id,int foto, String nombre, String cantidad, String precio) {
         this.id = id;
+        this.foto = foto;
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.precio = precio;
@@ -20,6 +22,13 @@ public class Producto {
     public void setId(String id) {
         this.id = id;
     }
+
+    public int getFoto() {   return foto;   }
+
+    public void setFoto(int foto) {
+        this.foto = foto;
+    }
+
 
     public String getNombre() {
         return nombre;

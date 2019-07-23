@@ -32,14 +32,17 @@ public class agregarProducto extends AppCompatActivity {
 
 public void guardar(View v){
 
-    String idAgreg, nom, canti, prec;
+    String idAgreg;
+    String nom;
+    String canti;
+    String prec;
     int foto;
     idAgreg = Datos.getId();
     nom = nombre.getText().toString();
     canti= cantidad.getText().toString();
     prec = precio.getText().toString();
     foto = this.fotoAleatoria();
-    Producto p = new Producto(idAgreg,nom,canti,prec);
+    Producto p = new Producto(idAgreg,foto,nom,canti,prec);
     p.guardar();
     //p.eliminar();
 
