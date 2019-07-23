@@ -30,6 +30,7 @@ public class AdaptadorProducto extends RecyclerView.Adapter<AdaptadorProducto.Pr
     public void onBindViewHolder(@NonNull ProductoViewHolder productoViewHolder, int i) {
         Producto p = productos.get(i);
         productoViewHolder.foto.setImageResource(p.getFoto());
+        productoViewHolder.idF.setText(p.getId());
         productoViewHolder.nombre.setText(p.getNombre());
         productoViewHolder.cantidad.setText(p.getCantidad());
         productoViewHolder.precio.setText(p.getPrecio());
@@ -43,6 +44,7 @@ public class AdaptadorProducto extends RecyclerView.Adapter<AdaptadorProducto.Pr
 
     public static class ProductoViewHolder extends RecyclerView.ViewHolder{
         private ImageView foto;
+        private TextView idF;
         private TextView nombre;
         private TextView cantidad;
         private TextView precio;
@@ -52,9 +54,10 @@ public class AdaptadorProducto extends RecyclerView.Adapter<AdaptadorProducto.Pr
             super(itemView);
             v = itemView;
             foto = v.findViewById(R.id.foto);
+            idF = v.findViewById(R.id.lblId);
             nombre = v.findViewById(R.id.lblNombre);
-            cantidad = v.findViewById(R.id.editCantidad);
-            precio= v.findViewById(R.id.editPrecio);
+            cantidad = v.findViewById(R.id.lblCantidad);
+            precio= v.findViewById(R.id.lblPrecio);
 
         }
 

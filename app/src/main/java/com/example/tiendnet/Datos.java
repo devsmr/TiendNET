@@ -40,7 +40,7 @@ public class Datos {
     }
 
     //set
-    public static void setPersonas(ArrayList<Producto> personas){
+    public static void setProductos(ArrayList<Producto> productos){
 
         Datos.productos= productos;
     }
