@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TiendNET</string>
+    <string name="titulo">Add Product</string>
+    <string name="id">Id</string>
+    <string name="nombreProducto">Name</string>
+    <string name="cantidad">Quantity</string>
+    <string name="precio">Price</string>
+    <string name="agregar">Add</string>
+    <string name="cancelar">Cancel</string>
+    <string name="mensaje">Product added successfully</string>
+    <string name="action_settings">Settings</string>
+</resources>
