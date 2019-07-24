@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TiendNET</string>
+        <string name="app_name">TiendNET</string>
     <string name="action_settings">Settings</string>
     <string name="titulo">Agregar Producto</string>
     <string name="id">Id</string>
@@ -9,4 +9,9 @@
     <string name="agregar">Agregar</string>
     <string name="cancelar">Cancelar</string>
     <string name="mensaje">Producto agregado exitosamente</string>
+    <string name="msjID">Favor ingresar el ID del producto</string>
+    <string name="msjNombre">Favor ingresar el nombre del producto</string>
+    <string name="msjCantidad">Favor ingresaer la cantidad del producto</string>
+    <string name="msjPrecio">Favor ingresar el precio del producto</string>
+
 </resources>

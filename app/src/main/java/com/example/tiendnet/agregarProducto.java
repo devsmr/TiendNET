@@ -31,7 +31,7 @@ public class agregarProducto extends AppCompatActivity {
     }
 
 public void guardar(View v){
-
+ if(validar()){
     String idAgreg;
     String nom;
     String canti;
@@ -47,9 +47,30 @@ public void guardar(View v){
     //p.eliminar();
 
     //Snackbar.make(v,"Persona Guardada Exitosamente",Snackbar.LENGTH_SHORT).show();
-    Snackbar.make(v,getString(R.string.mensaje),Snackbar.LENGTH_SHORT).show();
+    Snackbar.make(v,getString(R.string.mensaje),Snackbar.LENGTH_SHORT).show();}
 }
 
+    public boolean validar(){
+
+        if(id.getText().toString().isEmpty()){
+           id.setError(getResources().getString(R.string.msjID));
+            id.requestFocus();
+            return false;
+        }else if(nombre.getText().toString().isEmpty()){
+            nombre.setError(getResources().getString(R.string.msjNombre));
+            nombre.requestFocus();
+            return false;
+        }else if(cantidad.getText().toString().isEmpty()) {
+            cantidad.setError(getResources().getString(R.string.msjCantidad));
+            cantidad.requestFocus();
+            return false;
+        }else if(precio.getText().toString().isEmpty()) {
+            precio.setError(getResources().getString(R.string.msjPrecio));
+            precio.requestFocus();
+            return false;
+        }
+        return  true;
+    }
 
 
     public void limpiar(View v){

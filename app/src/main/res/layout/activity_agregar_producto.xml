@@ -17,14 +17,13 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <EditText
+      <EditText
         android:id="@+id/txtId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:ems="10"
-        android:hint="@string/id"
-        android:inputType="textPersonName" />
+        android:hint="@string/cantidad"
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/txtNombre"
